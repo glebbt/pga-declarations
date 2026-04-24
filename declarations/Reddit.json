@@ -8,19 +8,23 @@
     },
     "Privacy Policy": {
       "fetch": "https://www.redditinc.com/policies/privacy-policy",
+      "select": "main",
       "remove": [
-        ".filter-holder",
         "button",
         "policy-page-sidebar",
         "faceplate-menu"
       ],
-      "select": "main",
       "executeClientScripts": true
     },
     "Trackers Policy": {
       "fetch": "https://www.reddit.com/policies/cookies",
       "select": [
-        "article"
+        "main"
+      ],
+      "remove": [
+        "button",
+        "policy-page-sidebar",
+        "faceplate-menu"
       ],
       "executeClientScripts": true
     },
